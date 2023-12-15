@@ -1,0 +1,24 @@
+2023-12-15 11:34:05.909  INFO 12600 --- [main] c.l.msclient.MsclientApplicationTests    : Starting MsclientApplicationTests using Java 11.0.0.1 on CYRAX with PID 12600 (started by Leonan in C:\java\microservices\msc-main\msclient)
+2023-12-15 11:34:05.916  INFO 12600 --- [main] c.l.msclient.MsclientApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-12-15 11:34:07.149  INFO 12600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-15 11:34:07.301  INFO 12600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interfaces.
+2023-12-15 11:34:07.579  INFO 12600 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0773e9ea-315f-3cc0-8581-c7e3545e98f2
+2023-12-15 11:34:08.276  INFO 12600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-15 11:34:08.489  INFO 12600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-15 11:34:08.576  INFO 12600 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-15 11:34:08.672  INFO 12600 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2023-12-15 11:34:08.854  INFO 12600 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-15 11:34:08.969  INFO 12600 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-12-15 11:34:09.585  INFO 12600 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-15 11:34:09.593  INFO 12600 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 11:34:10.367  WARN 12600 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-15 11:34:12.819  INFO 12600 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-12-15 11:34:12.973  WARN 12600 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-12-15 11:34:12.983  INFO 12600 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-12-15 11:34:13.075  INFO 12600 --- [main] c.l.msclient.MsclientApplicationTests    : Started MsclientApplicationTests in 7.772 seconds (JVM running for 8.79)
+2023-12-15 11:34:13.295  INFO 12600 --- [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-12-15 11:34:13.299  INFO 12600 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCLIENT with eureka with status DOWN
+2023-12-15 11:34:13.307  INFO 12600 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-15 11:34:13.308  INFO 12600 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-12-15 11:34:13.317  INFO 12600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-15 11:34:13.320  INFO 12600 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

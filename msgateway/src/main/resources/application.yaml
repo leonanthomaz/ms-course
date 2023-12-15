@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: msgateway
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://${KEYCLOAK_SERVER}:${KEYCLOAK_PORT}/realms/msmaster
+
+server:
+  port: 8080
+  wait-time-in-ms-when-sync-empty: 0
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://system:stymssme@${EUREKA_SERVER}:8761/eureka

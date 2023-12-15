@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: mscard
+  jpa:
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+  rabbitmq:
+    host: ${RABBIT_SERVER}
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: 0
+  wait-time-in-ms-when-sync-empty: 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://system:stymssme@${EUREKA_SERVER}:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}
+
+mq:
+  queues:
+    card-issuance: card-issuance
